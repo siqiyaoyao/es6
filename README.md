@@ -69,10 +69,10 @@ console.log(results); //array ['a','b','c']
 ```
 - .reduce() 为数组中的每一个元素一次执行回调函数，不包括数组中被删除，或从未被赋值的元素， 函数累加器
 回调函数里的4个参数
-- previousValue：上一次调用回调返回的值，或者是提供的初始值（initialValue）
-- currentValue：数组中当前被处理的元素
-- index ：当前元素在数组中的索引
-- array ：调用 reduce 的数组
+  previousValue：上一次调用回调返回的值，或者是提供的初始值（initialValue）
+  currentValue：数组中当前被处理的元素
+  index ：当前元素在数组中的索引
+  array ：调用 reduce 的数组
 ```javascript
 var inputs = ['a1','b2','c3'];
 var results = inputs.reduce((pre,cur)=>pre+cur)
